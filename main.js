@@ -38,7 +38,7 @@ var displayProjects = function(name,link,creator,type,des,img) {
     var html ="";
     html += "<div id='project' style='background-color:white;width:300px;height:600;border:1px solid #000;border-radius:10px;margin:25px;'>";
     html += "<img id='thing' src='" + img + "'><br>";
-    html += "<a target='_blank' href='file:///Users/allstarcode/Desktop/floobits/project.html?projects_url=" + link +"'>" + name + "</a><br>";
+    html += "<a target='_blank' href='/project.html?projects_url=" + link +"'>" + name + "</a><br>";
     html += des + "<br>";
     html += 'By: ' + myCreator;
     html +="</div>";
@@ -102,7 +102,7 @@ var displayCommetns = function(comments) {
     var html ="";
     html += "<div>";
     html += "<img src='" + img + "'>";
-    html += "<a target='_blank' href='file:///Users/allstarcode/Desktop/floobits/project.html?projects_url=" + link +"'>" + link + "</a>";
+    html += "<a target='_blank' href='/project.html?projects_url=" + link +"'>" + link + "</a>";
     html += " A " + myType + ' by ' + myCreator;
     html +="</div>";
 
