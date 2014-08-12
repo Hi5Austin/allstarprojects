@@ -1,0 +1,236 @@
+<!--<!DOCTYPE html>
+<head>
+  <title>All Star Projects</title>
+  <style>
+    
+    p {
+      font-size: 22px;
+    }
+    
+
+    img {
+      height:250px;
+      width:250px;
+    }
+
+    div {
+      display:inline-block;
+      position:center;
+    }
+    
+
+    a {
+      color:black;
+      font-size:25px;
+    }
+
+   body {
+    text-align:center;
+   }
+
+  </style>
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+   <script src="main.js"></script>
+   </script>
+</head>
+
+<body>
+  <img id="header" src='http://i.imgur.com/O9DTzJC.png'>
+  <h1 id="header">Welcome to All Star Projects</h1>
+  <h1 id="header"><a target="_blank" href="file:///Users/allstarcode/Desktop/floobits/upload.html">Upload your projects</a></h1>
+  <div id="home"></div>
+
+</body> -->
+<!DOCTYPE html>
+<head>
+  <title>All Star Projects</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+
+  <style>
+    /*
+      1) make the width of the middle stuff 960px
+
+      2) Shrink icon to top left
+
+      3) Make Welcome to ASP bold
+
+      4) Make upload a button
+
+      5) Title
+
+      Can click on image to get to page
+
+      Change listing to look like kickstarter
+
+      Add Project Button at top (of the blue hue with white color)
+    */
+  body {
+    font-family: 'Lato', sans-serif;
+  }
+
+  #fil{
+  text-align: center;
+   border:1px solid #000;
+   margin-bottom: 50px;
+   padding-bottom: 25px;
+   padding-top:25px;
+  }
+  #home {
+        text-align:center;
+
+  }
+  #headerPic{
+    height:111px;
+    width:111px;
+  }
+    
+    p {
+      font-size: 22px;
+    }
+    
+    #header {
+      position: relative;
+      line-height: 25px;
+      background-color: white;
+      border:1px solid #000;
+      margin-bottom: 10px;
+      list-style:none;
+      display:inline;
+    }
+
+    /*li {
+      list-style: none;
+      background-color: white;
+      height: 250px;
+    }*/
+
+    #thing {
+      height:250px;
+      width:250px;
+    }
+
+    #home{
+    margin-right:100px ;
+    margin-left: 100px ;
+     list-style: none;
+      background-color: white;
+      height: 250px;
+    }
+
+    #project {
+      display:inline-block;
+      position:center;
+      border:1px;
+      background:none;
+    }
+    
+    #upload{
+      list-style: none;
+      background-color: white;
+      height: 35px;
+    }
+
+    #homeslide {
+      text-align: center;
+      border:1px solid #000;
+      margin-bottom: 25px;
+      padding-top: 25px;
+      margin-top: 25px;
+    }
+
+    #upload {
+      float:right;
+    }
+
+
+    a {
+      color:black;
+      font-size:25px;
+    }
+
+
+
+.myButton {
+  -moz-box-shadow:inset 0px 1px 0px 0px #d9fbbe;
+  -webkit-box-shadow:inset 0px 1px 0px 0px #d9fbbe;
+  box-shadow:inset 0px 1px 0px 0px #d9fbbe;
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #b8e356), color-stop(1, #a5cc52));
+  background:-moz-linear-gradient(top, #b8e356 5%, #a5cc52 100%);
+  background:-webkit-linear-gradient(top, #b8e356 5%, #a5cc52 100%);
+  background:-o-linear-gradient(top, #b8e356 5%, #a5cc52 100%);
+  background:-ms-linear-gradient(top, #b8e356 5%, #a5cc52 100%);
+  background:linear-gradient(to bottom, #b8e356 5%, #a5cc52 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#b8e356', endColorstr='#a5cc52',GradientType=0);
+  background-color:#b8e356;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  border:1px solid #83c41a;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:arial;
+  font-size:16px;
+  font-weight:bold;
+  padding:14px 19px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #86ae47;
+}
+
+.myButton:hover {
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #a5cc52), color-stop(1, #b8e356));
+  background:-moz-linear-gradient(top, #a5cc52 5%, #b8e356 100%);
+  background:-webkit-linear-gradient(top, #a5cc52 5%, #b8e356 100%);
+  background:-o-linear-gradient(top, #a5cc52 5%, #b8e356 100%);
+  background:-ms-linear-gradient(top, #a5cc52 5%, #b8e356 100%);
+  background:linear-gradient(to bottom, #a5cc52 5%, #b8e356 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a5cc52', endColorstr='#b8e356',GradientType=0);
+  background-color:#a5cc52;
+}
+
+.myButton:active {
+  position:relative;
+  top:1px;
+}
+
+</style>
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+   <script src="main.js"></script>
+</head>
+
+<body>
+  <a href="/Users/allstarcode/Desktop/FBfilter/allprojects.html">
+  <img id="headerPic" src='http://i.imgur.com/O9DTzJC.png'></a>
+  <a target="_blank" href="/Users/allstarcode/Desktop/floobits/upload.html"><h3 id="upload">Upload</h3></a>
+ <div id='homeslide'>
+ <br><br><br><br><br><br><br>
+  <h1>Welcome to All Star Projects</h1>
+  <h4>Here you can easily view every All Star's project</h4>
+  <a href="#" class="myButton">View Projects</a>
+  <!--<button ="myButton">View Projects</button><br> -->
+ <!-- <a href="/Users/allstarcode/Desktop/FBfilter/pretty%20stuff%20for%20site.html"><h3>Upload</h3></a> -->
+  <!--<select name="typefilter" id="typefilter">
+  <option value="All">All</option>
+<option value="Game">Game</option>
+<option value="Site">Site</option>
+<option value="Web App">Web App</option>
+</select> -->
+<br><br><br><br><br><br><br><br><br>
+  </div>
+  <div id="fil">
+  <a>Show me </a>
+  <select name="typefilter" id="typefilter">
+  <option value="All">All</option>
+<option value="Game">Games</option>
+<option value="Site">Sites</option>
+<option value="Web App">Web Apps</option>
+<a>projects</a>
+<input type="Submit" id="filtersubmit">
+</select></div><br><br>
+  <div id="home">
+  </div>
+
+</body>

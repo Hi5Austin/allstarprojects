@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+  <title>All Star Projects</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: helvetica;
+      width: 100%;
+      height: auto;
+      }
+    p {
+      font-size: 22px;
+    }
+
+    #link {
+      color:blue;
+    }
+
+    div {
+      display:block;
+    }
+    input {
+      border: 1;
+      padding: 10px;
+      font-size: 18px;
+    }
+    input[type="submit"] {
+      color: white;
+      border: 0;
+      background: red;
+      color: white;
+    }
+
+    img {
+      height:250px;
+      width:250px;
+    }
+
+    h3 {
+      color: red;
+    }
+
+    ul {
+      text-align: left;
+      text-decoration: none;
+    }
+
+    a {
+      color:black;
+    }
+
+  </style>
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+   <script src="main.js"></script>
+   </script>
+</head>
+
+<body>
+  <img src='http://i.imgur.com/O9DTzJC.png'>
+  <h1>Welcome to All Star Projects</h1>
+  <h3> Make sure your link has a "http://" attached to it</h3>
+  <div>
+  <input id="searchBox" placeholder="Enter a link"> <br>
+  <input id="nameBox" placeholder="Your name"><br>
+  <input id="des" placeholder="Description"> <br>
+  <input id="img" placeholder='Image Url Here'>
+  <form id="projectType" action="">
+<select name="type">
+<option value="game">Game</option>
+<option value="site">Site</option>
+<option value="webapp">Web App</option>
+</select>
+</form>
+</div>
+  <input id="searchButton" type="submit">
+  
+  <ul id="results">
+   
+  </ul>
+
+
+
+</body>
