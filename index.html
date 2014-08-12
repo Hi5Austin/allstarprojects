@@ -27,6 +27,10 @@
     font-family: 'Lato', sans-serif;
   }
 
+  li {
+    font-size: 22px;
+  }
+
   #fil{
   text-align: center;
    border:1px solid #000;
@@ -84,11 +88,6 @@
       background:none;
     }
     
-    #upload{
-      list-style: none;
-      background-color: white;
-      height: 35px;
-    }
 
     #homeslide {
       text-align: center;
@@ -101,13 +100,23 @@
     #upload {
       float:right;
       color: #33bdef;
+      display: inline;
+      list-style: none;
+      background-color: white;
+      height: 35px;
+      display:inline-block;
     }
-    
+
+    #Login {
+      float: right;
+      color: #33bdef;
+    }
 
 
     a {
-      color:black;
+      color:#33bdef;
       font-size:25px;
+      text-decoration: none;
     }
 
 
@@ -202,6 +211,16 @@ select[name="typefilter"] {
   top:1px;
 }
 
+#lbut {
+  padding-right: 25px;
+  margin-right: 25px;
+}
+
+#sbut{
+  padding-right: 25px;
+  margin-right: 25px;
+}
+
 
 
 </style>
@@ -213,8 +232,13 @@ select[name="typefilter"] {
 <body>
   <a href="/Users/allstarcode/Desktop/FBfilter/allprojects.html">
   <img id="headerPic" src='http://i.imgur.com/O9DTzJC.png'></a>
-  <div id="upload">
-  <a target="_blank" href="upload.html"><h3 id="upload">Upload</h3></a>
+
+  <div id="upload"><br><br>
+  <a id="sbut">Sign Up</a>
+  <a id="lbut">Log In</a> 
+  <a target="_blank" href="upload.html">Upload</a>
+  <!--<li><h3>Login</h3></li> -->
+
   </div>
 
  <div id='homeslide'>
