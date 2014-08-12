@@ -146,8 +146,8 @@ allComs.on('child_added',function(snapshot) {
         }
       }
     });
-
-$("#filtersubmit").click(function(){
+//<div id="fil">
+$("#fil").change(function(){
 $("#home").empty();
 projects.on('value',function(snapshot){
   var pros = snapshot.val();
