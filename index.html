@@ -142,6 +142,11 @@
 
     #upload {
       float:right;
+      color: #33bdef;
+    }
+    #Login {
+      float: right;
+      color: #33bdef;
     }
 
 
@@ -200,6 +205,7 @@ select[name="typefilter"] {
   margin: 20;
   padding: 40px;
 }
+
 #filtersubmit {
   -moz-box-shadow: 0px 0px 0px 0px #f0f7fa;
   -webkit-box-shadow: 0px 0px 0px 0px #f0f7fa;
@@ -222,7 +228,7 @@ select[name="typefilter"] {
   font-family:Arial;
   font-size:16px;
   font-weight:bold;
-  padding:14px 20px;
+  padding:7px 23px;
   text-decoration:none;
   text-shadow:0px -1px 0px #5b6178;
 }
@@ -240,9 +246,8 @@ select[name="typefilter"] {
   position:relative;
   top:1px;
 }
-#upload {
-  color: #33bdef;
-}
+
+
 </style>
 
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -252,7 +257,10 @@ select[name="typefilter"] {
 <body>
   <a href="/Users/allstarcode/Desktop/FBfilter/allprojects.html">
   <img id="headerPic" src='http://i.imgur.com/O9DTzJC.png'></a>
-  <a target="_blank" href="/Users/allstarcode/Desktop/floobits/upload.html"><h3 id="upload">Upload</h3></a>
+  <div id="upload">
+  <a target="_blank" href="/Users/allstarcode/Desktop/floobits/upload.html"><h3>Upload</h3></a>
+  <h3 id="Login">Login</h3>
+  </div>
  <div id='homeslide'>
  <br><br><br><br><br><br><br>
   <h1>Welcome to All Star Projects</h1>
