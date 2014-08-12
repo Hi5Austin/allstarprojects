@@ -36,7 +36,7 @@ var displayProjects = function(name,link,creator,type,des,img) {
     var myName= name;
 
     var html ="";
-    html += "<a href='http://austincarvey.github.io/allstarprojects/project.html?projects_url=" + link + "'><div id='project' style='background-color:white;width:300px;height:600;border:1px solid #000;border-radius:10px;margin:25px;'>";
+    html += "<a target='_blank' href='http://austincarvey.github.io/allstarprojects/project.html?projects_url=" + link + "'><div id='project' style='background-color:white;width:300px;height:600;border:1px solid #000;border-radius:10px;margin:25px;'>";
     html += "<img id='thing' src='" + img + "'><br>";
     html += "<a target='_blank' href='http://austincarvey.github.io/allstarprojects/project.html?projects_url=" + link +"'>" + name + "</a><br>";
     html += des + "<br>";
