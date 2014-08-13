@@ -11,7 +11,7 @@ var year = d.getFullYear();
 
 $('#myButton').click(function(){
 $('html, body').animate({
-    scrollTop: $("#home").offset().top
+    scrollTop: $("#fil").offset().top
 }, 1000);
 });
 
