@@ -20,9 +20,12 @@
       display:block;
     }
     input {
+      text-align: center;
       border: 1;
-      padding: 10px;
-      font-size: 18px;
+      padding: 0px;
+      font-size: 15px;
+      width: 300px;
+      height: 50px;
     }
     input[type="submit"] {
       color: white;
@@ -35,10 +38,17 @@
       height:111px;
       width:111px;
       float:left;
+      padding-left: 25px; 
+
+    }
+    h1 {
+      text-align: center;
+      color: #262665;
+
     }
 
     h3 {
-      color: red;
+      color: #BABABA;
     }
 
     ul {
@@ -107,14 +117,14 @@
 
 <body>
   <img src='http://i.imgur.com/O9DTzJC.png'><br><br><br><br><br>
-  <h1>Welcome to All Star Projects</h1>
-  <h3> Make sure your link has a "http://" attached to it</h3>
+  <h1>Welcome to the Upload Page. Let's Get Started!</h1>
+  <h3> Make sure your link has a "http://" attached to it!</h3><br>
   <div>
-    <input id="namebox" placeholder="Title of your project"><br>
-    <input id="searchBox" placeholder="Enter a link"> <br>
-    <input id="nameBox" placeholder="Your name"><br>
-    <input id="des" placeholder="Description"> <br>
-    <input id="img" placeholder='Image Url Here'> <br>
+    <input id="namebox" placeholder="What's the title of your project?"><br><br><br>
+    <input id="searchBox" placeholder="Enter a link for your project!"> <br><br><br>
+    <input id="des" placeholder="Add a description!"> <br><br><br>
+    <input id="img" placeholder='Pick an image for your project!'> <br><br><br>
+    <input id="nameBox" placeholder="Don't forget your name!"><br><br><br>
 <form id="projectType" action="">
 <select id="type" name="type">
 <option value="Game">Pick A Category</option>
@@ -131,7 +141,7 @@
 <option value="Utility">Utility</option>
 </select>
 </form>
-</div>
+<br></div>
 <a href="/index.html"><input id="searchButton" type="submit" value="Upload"></a>
 
 
