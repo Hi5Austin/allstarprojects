@@ -161,7 +161,7 @@ projects.on('value',function(snapshot){
       if(pros.hasOwnProperty(pro)){
         var projectProps = pros[pro];
         var filter = $("#typefilter").val();
-       
+       debugger
         if($("#typefilter").val() === "All"){
           displayProjects(projectProps.name,projectProps.link,projectProps.creator,projectProps.type,projectProps.des,projectProps.img,year);
         }
