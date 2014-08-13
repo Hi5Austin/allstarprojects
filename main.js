@@ -134,14 +134,14 @@ allComs.on('child_added',function(snapshot) {
     //var comment = $("#com").val();
    
      var projects_url = getURLParameter("projects_url");
-    $("#indie").append('<iframe id="pro" src="' + projects_url +' "> </iframe>');
+    $("#dez").append('<iframe id="pro" src="' + projects_url +' "> </iframe>');
     projects.on('value',function(snapshot) {
       var stuff = snapshot.val();
       for(var key in stuff) {
         if(stuff[key].link === projects_url) {
-          $("#indie").append('<a>' + stuff[key].name + '</a><br>');
-          $("#indie").append('<a>' + stuff[key].des + '</a><br>');
-          $("#indie").append('<a> A '+ stuff[key].type + ' by '+ stuff[key].creator + '</a><br>');
+          $("#dez").append('<a>' + stuff[key].name + '</a><br>');
+          $("#dez").append('<a>' + stuff[key].des + '</a><br>');
+          $("#dez").append('<a> A '+ stuff[key].type + ' by '+ stuff[key].creator + '</a><br>');
           //$("#indie").append('<input id="com" placeholder="Leave a comment"><input id="addc" type="Submit">');
           $("#indie").append('<input id="comname" placeholder="Name"><input id="com" placeholder="Leave a comment"><input id="addc" type="Submit">');
           //$("#indie").append('<div id="fb-root"></div>');
