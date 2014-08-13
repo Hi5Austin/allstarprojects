@@ -63,7 +63,7 @@ body {
 
     #project {
       display:inline-block;
-      
+      margin-bottom: 25px
       border:1px;
       background:none;
     }
