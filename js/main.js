@@ -2,6 +2,8 @@ $(document).ready(function() {
 // Have to do in get script to use firebase!
 $.getScript("https://cdn.firebase.com/js/client/1.0.15/firebase.js", function() {
 
+
+
 //this gets the code for firebase
 
 var projects = new Firebase('https://asproject.firebaseio.com/');
