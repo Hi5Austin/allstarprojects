@@ -66,6 +66,7 @@ var addProjectsToList = function() {
     var myLink = $("#searchBox").val();
     var myCreator = $("#nameBox").val();
     var myType = $("#projectType option:selected").text();
+    
     var myDes = $("#des").val();
     var myImg = $("#img").val();
     var myName = $("#namebox").val();
