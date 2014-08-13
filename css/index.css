@@ -82,7 +82,7 @@ body {
       padding-top: 25px;
       margin-top: 25px;
       background: url("http://i.imgur.com/iLjxjGq.jpg");
-      background-size: 1432px 690px;
+      background-size: 1432px 698px;
       background-repeat: no-repeat;
       background-attachment: fixed;
     }
@@ -177,10 +177,14 @@ select[name="typefilter"] {
 }
 
 h1 {
-  color: white;
+  color: #FFFAFA;
+  font-size: 60px;
+  font-style: bold;
+
 }
 h4{
-  color: white;
+  color: #FFFAFA;
+  font-size: 15px;
 }
 
 
