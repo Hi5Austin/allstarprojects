@@ -5,235 +5,48 @@
 
   <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
 
- <!-- <style>
-    /*
-      1) make the width of the middle stuff 960px
 
-      2) Shrink icon to top left
-
-      3) Make Welcome to ASP bold
-
-      4) Make upload a button
-
-      5) Title
-
-      Can click on image to get to page
-
-      Change listing to look like kickstarter
-
-      Add Project Button at top (of the blue hue with white color)
-    */
-  body {
-    font-family: 'Lato', sans-serif;
-  }
-
-  li {
-    font-size: 22px;
-  }
-
-  #fil{
-  text-align: center;
-   /*border-bottom:1px solid #000; */
-   margin-bottom: 50px;
-   padding-bottom: 25px;
-   padding-top:25px;
-  }
-  #home {
-        text-align:center;
-
-  }
-  #headerPic{
-    height:111px;
-    width:111px;
-    padding-left: 25px;
-
-  }
-    
-    p {
-      font-size: 22px;
-    }
-    
-    #header {
-      position: relative;
-      line-height: 25px;
-      background-color: white;
-      border:1px solid #000;
-      margin-bottom: 10px;
-      list-style:none;
-      display:inline;
-    }
-
-    /*li {
-      list-style: none;
-      background-color: white;
-      height: 250px;
-    }*/
-
-    #thing {
-      height:250px;
-      width:250px;
-    }
-
-    #home{
-    margin-right:100px ;
-    margin-left: 100px ;
-     list-style: none;
-      background-color: white;
-      height: 250px;
-    }
-
-    #project {
-      display:inline-block;
-      position:center;
-      border:1px;
-      background:none;
-    }
-
-    #project:hover {
-      opacity: 0.6;
-      cursor: pointer;
-    }
-    
-
-    #homeslide {
-      text-align: center;
-      border-top:1px solid #000;
-      border-bottom: 1px solid #000;
-      margin-bottom: 25px;
-      padding-top: 25px;
-      margin-top: 25px;
-    }
-
-    #upload {
-      float:right;
-      color: #33bdef;
-      display: inline;
-      list-style: none;
-      background-color: white;
-      height: 35px;
-      display:inline-block;
-      padding-right: 75px;
-    }
-
-    #Login {
-      float: right;
-      color: #33bdef;
-    }
-
-
-    a {
-      color:#33bdef;
-      font-size:25px;
-      text-decoration: none;
-    }
-
-
-
-.myButton {
-  -moz-box-shadow: 0px 0px 0px 0px #f0f7fa;
-  -webkit-box-shadow: 0px 0px 0px 0px #f0f7fa;
-  box-shadow: 0px 0px 0px 0px #f0f7fa;
-  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #33bdef), color-stop(1, #019ad2));
-  background:-moz-linear-gradient(top, #33bdef 5%, #019ad2 100%);
-  background:-webkit-linear-gradient(top, #33bdef 5%, #019ad2 100%);
-  background:-o-linear-gradient(top, #33bdef 5%, #019ad2 100%);
-  background:-ms-linear-gradient(top, #33bdef 5%, #019ad2 100%);
-  background:linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#33bdef', endColorstr='#019ad2',GradientType=0);
-  background-color:#33bdef;
-  -moz-border-radius:16px;
-  -webkit-border-radius:16px;
-  border-radius:16px;
-  border:1px solid #057fd0;
-  display:inline-block;
-  cursor:pointer;
-  color:#ffffff;
-  font-family:Arial;
-  font-size:16px;
-  font-weight:bold;
-  padding:14px 20px;
-  text-decoration:none;
-  text-shadow:0px -1px 0px #5b6178;
-}
-.myButton:hover {
-  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #019ad2), color-stop(1, #33bdef));
-  background:-moz-linear-gradient(top, #019ad2 5%, #33bdef 100%);
-  background:-webkit-linear-gradient(top, #019ad2 5%, #33bdef 100%);
-  background:-o-linear-gradient(top, #019ad2 5%, #33bdef 100%);
-  background:-ms-linear-gradient(top, #019ad2 5%, #33bdef 100%);
-  background:linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#019ad2', endColorstr='#33bdef',GradientType=0);
-  background-color:#019ad2;
-}
-.myButton:active {
-  position:relative;
-  top:1px;
-}
-select[name="typefilter"] {
-  color: #33bdcf;
-  width: 168px;
-  height: 34px;
-  border: 1px solid;
-  margin: 20;
-  padding: 40px;
-}
-
-#lbut {
-  padding-right: 25px;
-  margin-right: 25px;
-}
-
-#sbut{
-  padding-right: 25px;
-  margin-right: 25px;
-}
-
-
-
-</style> -->
-
-<link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
 
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-   <script src="main.js"></script>
+  <script src="main.js"></script>
 </head>
 
 <body>
   <a href="/Users/allstarcode/Desktop/FBfilter/allprojects.html">
-  <img id="headerPic" src='http://i.imgur.com/O9DTzJC.png'></a>
+    <img id="headerPic" src='http://i.imgur.com/O9DTzJC.png'></a>
 
-  <div id="upload"><br><br>
-  <a id="sbut">Sign Up</a>
-  <a id="lbut">Log In</a> 
-  <a target="_blank" href="upload.html">Upload</a>
-  <!--<li><h3>Login</h3></li> -->
+    <div id="upload"><br><br>
+      <a id="sbut">Sign Up</a>
+      <a id="lbut">Log In</a> 
+      <a target="_blank" href="upload.html">Upload</a>
+      <!--<li><h3>Login</h3></li> -->
 
-  </div>
-  <div id='homeslide'>
- <br><br><br><br><br><br><br>
-  <h1>Welcome to All Star Projects</h1>
-  <h4>Here you can easily view every All Star's project</h4>
-  <a href="#" class="myButton">View Projects</a>
-  <!--<button ="myButton">View Projects</button><br> -->
- <!-- <a href="/Users/allstarcode/Desktop/FBfilter/pretty%20stuff%20for%20site.html"><h3>Upload</h3></a> -->
-  <!--<select name="typefilter" id="typefilter">
-  <option value="All">All</option>
-<option value="Game">Game</option>
-<option value="Site">Site</option>
-<option value="Web App">Web App</option>
-</select> -->
-<br><br><br><br><br><br><br><br><br>
-  </div>
-  <div id="fil">
-  <a>Show me </a>
-  <select name="typefilter" id="typefilter">
-  <option value="All">All</option>
-<option value="Game">Games</option>
-<option value="Site">Sites</option>
-<option value="Web App">Web Apps</option>
-<a>projects</a>
-</select></div><br><br>
-  <div id="home">
-  </div>
+    </div>
+    <div id='homeslide'>
+     <br><br><br><br><br><br><br>
+     <h1>Welcome to All Star Projects</h1>
+     <h4>Here you can easily view every All Star's project</h4>
+     <a href="#" class="myButton">View Projects<a>
 
-</body>
+       <br><br><br><br><br><br><br><br>
+     </div>
+     <div id="fil">
+     <a id="show">Show me</a>
+        <select name="typefilter" id="typefilter">
+          <option value="All">All</option>
+          <option value="Game">Games</option>
+          <option value="Site">Sites</option>
+          <option value="Web App">Web Apps</option>
+          <a>projects</a>
+      </select>
+    <br>
+    <br>
+    </div>
+    <div id="home">
+    </div><br>
+
+
+
+
+        </body>

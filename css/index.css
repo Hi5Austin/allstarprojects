@@ -6,12 +6,16 @@ body {
     font-size: 22px;
   }
 
+
   #fil{
   text-align: center;
+  float:center;
    /*border-bottom:1px solid #000; */
    margin-bottom: 50px;
    padding-bottom: 25px;
    padding-top:25px;
+
+
   }
   #home {
         text-align:center;
@@ -59,7 +63,7 @@ body {
 
     #project {
       display:inline-block;
-      position:center;
+      
       border:1px;
       background:none;
     }
@@ -77,6 +81,10 @@ body {
       margin-bottom: 25px;
       padding-top: 25px;
       margin-top: 25px;
+      background: url("http://i.imgur.com/iLjxjGq.jpg");
+      background-size: 1432px 690px;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
     }
 
     #upload {
@@ -101,6 +109,10 @@ body {
       font-size:25px;
       text-decoration: none;
     }
+
+    /*#show {
+      margin-left: 540px;
+    } */
 
 
 
@@ -151,6 +163,7 @@ select[name="typefilter"] {
   border: 1px solid;
   margin: 20;
   padding: 40px;
+  /*margin-left: 650px; */
 }
 
 #lbut {
@@ -162,4 +175,15 @@ select[name="typefilter"] {
   padding-right: 25px;
   margin-right: 25px;
 }
+
+h1 {
+  color: white;
+}
+h4{
+  color: white;
+}
+
+
+
+
 
