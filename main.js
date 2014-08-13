@@ -169,7 +169,7 @@ projects.on('value',function(snapshot){
         var projectProps = pros[pro];
         var filter = $("#typefilter").val();
        debugger
-        if($("#typefilter").val() === "All"){
+        if($("#typefilter").val() === "Everything"){
           displayProjects(projectProps.name,projectProps.link,projectProps.creator,projectProps.type,projectProps.des,projectProps.img,year);
         }
         else if(projectProps.type === $("#typefilter").val())  {
