@@ -162,7 +162,7 @@ projects.on('value',function(snapshot){
   //for(var x in pros){
     //console.log(x.type);
   //}
- if($("#typefilter").val() === "Everything" && $("#namefilter")===""){
+ if($("#typefilter").val() === "Everything" && $("#namefilter").val()===""){
         for(var pro in pros) {
       if(pros.hasOwnProperty(pro)){
         var projectProps = pros[pro];
@@ -172,7 +172,7 @@ projects.on('value',function(snapshot){
       }
 }
 
-else if($("#typefilter").val() === "Everything" && $("#namefilter")!==""){
+else if($("#typefilter").val() === "Everything" && $("#namefilter").val()!==""){
         for(var pro in pros) {
       if(pros.hasOwnProperty(pro)){
         var projectProps = pros[pro];
@@ -232,7 +232,8 @@ $(document).keypress(function(e) {
   var pros = snapshot.val();
   
     if(e.which == 13) {
-        if($("#typefilter").val() === "Everything" && $("#namefilter")===""){
+        if($("#typefilter").val() === "Everything" && $("#namefilter").val()===""){
+          debugger
         for(var pro in pros) {
       if(pros.hasOwnProperty(pro)){
         var projectProps = pros[pro];
@@ -241,7 +242,7 @@ $(document).keypress(function(e) {
         }
       }
 }
-else if($("#typefilter").val() === "Everything" && $("#namefilter")!==""){
+else if($("#typefilter").val() === "Everything" && $("#namefilter").val()!==""){
         for(var pro in pros) {
       if(pros.hasOwnProperty(pro)){
         var projectProps = pros[pro];
