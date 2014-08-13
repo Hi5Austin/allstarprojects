@@ -9,6 +9,12 @@ var allComs = new Firebase('https://asccomments.firebaseio.com/');
 var d = new Date();
 var year = d.getFullYear();
 
+$('#myButton').click(function(){
+$('html, body').animate({
+    scrollTop: $("#home").offset().top
+}, 1000);
+});
+
 //this connects to my firebase locker
 //projects.on('value', function (snapshot) {
 	//var database = snapshot.val();
@@ -172,6 +178,9 @@ projects.on('value',function(snapshot){
       }
   }
 });
+
+
+
        //  $("#jsscript").append('<script> $.getScript("https://cdn.firebase.com/js/client/1.0.15/firebase.js", function() {var projects = new Firebase("https://asproject.firebaseio.com/"); $("#addc").click(function(){ var comment = $("#com").val(); projects.push({comments:comment});});});');
 
 //          $("#jsscript").append('<script> $("#addc").click(function(){ var myComments = $("div"); var comment = $("#com").val(); $("body").append("<div>" + comment + "</div>");});');
