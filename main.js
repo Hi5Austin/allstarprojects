@@ -9,6 +9,8 @@ var allComs = new Firebase('https://asccomments.firebaseio.com/');
 var d = new Date();
 var year = d.getFullYear();
 
+projects.remove();
+
 $('#myButton').click(function(){
 $('html, body').animate({
     scrollTop: $("#fil").offset().top
