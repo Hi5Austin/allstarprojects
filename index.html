@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <head>
   <title>All Star Projects</title>
+ 
 
   <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
 
@@ -14,39 +15,57 @@
 
 <body>
   <a href="/Users/allstarcode/Desktop/FBfilter/allprojects.html">
-    <img id="headerPic" src='http://i.imgur.com/O9DTzJC.png'></a>
 
-    <div id="upload"><br><br>
-      <a id="sbut">Sign Up</a>
-      <a id="lbut">Log In</a> 
-      <a target="_blank" href="upload.html">Upload</a>
-      <!--<li><h3>Login</h3></li> -->
+  <img id="headerPic" src='http://i.imgur.com/O9DTzJC.png'></a>
 
-    </div>
-    <div id='homeslide'>
-     <br><br><br><br><br><br><br>
-     <h1>Welcome to All Star Projects</h1>
-     <h4>Here you can easily view every All Star's project</h4>
-     <a href="#" class="myButton">View Projects<a>
+  <div id="upload"><br><br>
+  <a id="sbut">Sign Up</a>
+  <a id="lbut">Log In</a> 
+  <a target="_blank" href="upload.html">Upload</a>
+  <!--<li><h3>Login</h3></li> -->
 
-       <br><br><br><br><br><br><br><br>
-     </div>
-     <div id="fil">
-     <a id="show">Show me</a>
-        <select name="typefilter" id="typefilter">
-          <option value="All">All</option>
-          <option value="Game">Games</option>
-          <option value="Site">Sites</option>
-          <option value="Web App">Web Apps</option>
-          <a>projects</a>
-      </select>
-    <br>
-    <br>
-    </div>
-    <div id="home">
-    </div><br>
+  </div>
+  <div id='homeslide'>
+ <br><br><br><br><br><br><br>
+  <h1>Welcome to All Star Projects</h1>
+  <h4>Here you can easily view every All Star's project</h4>
+  <a id="myButton" class="myButton">View Projects</a>
+  <!--<button ="myButton">View Projects</button><br> -->
+ <!-- <a href="/Users/allstarcode/Desktop/FBfilter/pretty%20stuff%20for%20site.html"><h3>Upload</h3></a> -->
+  <!--<select name="typefilter" id="typefilter">
+  <option value="All">All</option>
+<option value="Game">Game</option>
+<option value="Site">Site</option>
+<option value="Web App">Web App</option>
+</select> -->
+<br><br><br><br><br><br><br><br><br>
+  </div>
+  <div id="fil">
+  <a>Show me </a>
+
+<select name="typefilter" id="typefilter">
+<option value="Everything">Everything</option>
+<option value="Game">Games</option>
+<!--<option value="site">Site
+</option> -->
+<!--<option value="webapp">Web App
+</option> -->
+<option value="News">News</option>
+<option value="Productivity">Productivity</option>
+<option value="Photos and videos">Photos and Videos</option>
+<option value="Entertainment">Entertainment</option>
+<option value="Music">Music</option>
+</select>
+</div><br><br>
 
 
+  <div id="home">
+  </div>
+ <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+if(prompt('What is the All Star Code password? Just click ok if you want to see our projects.') != 'abc'){
+  $('#upload').empty();
+};
+</script>
+</body>
 
-
-        </body>

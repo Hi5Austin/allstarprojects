@@ -9,6 +9,12 @@ var allComs = new Firebase('https://asccomments.firebaseio.com/');
 var d = new Date();
 var year = d.getFullYear();
 
+$('#myButton').click(function(){
+$('html, body').animate({
+    scrollTop: $("#home").offset().top
+}, 1000);
+});
+
 //this connects to my firebase locker
 //projects.on('value', function (snapshot) {
 	//var database = snapshot.val();
@@ -66,6 +72,7 @@ var addProjectsToList = function() {
     var myLink = $("#searchBox").val();
     var myCreator = $("#nameBox").val();
     var myType = $("#projectType option:selected").text();
+    
     var myDes = $("#des").val();
     var myImg = $("#img").val();
     var myName = $("#namebox").val();
@@ -113,7 +120,7 @@ var displayCommetns = function(comments) {
 allComs.on('child_added',function(snapshot) {
   var coo = snapshot.val();
   if(coo.url === getURLParameter("projects_url")){
-    $("#indie").append('<br><a>' + coo.name + ": "+ coo.comments + '</a><br>');
+    $("#indie").append('<br><a id="mname">' + coo.name + "</a><br><a id='name'> "+ coo.comments + '</a><br>');
   }
 });
 
@@ -127,14 +134,14 @@ allComs.on('child_added',function(snapshot) {
     //var comment = $("#com").val();
    
      var projects_url = getURLParameter("projects_url");
-    $("#indie").append('<iframe id="pro" src="' + projects_url +' "> </iframe>');
+    $("#dez").append('<iframe id="pro" src="' + projects_url +' "> </iframe>');
     projects.on('value',function(snapshot) {
       var stuff = snapshot.val();
       for(var key in stuff) {
         if(stuff[key].link === projects_url) {
-          $("#indie").append('<a>' + stuff[key].name + '</a><br>');
-          $("#indie").append('<a>' + stuff[key].des + '</a><br>');
-          $("#indie").append('<a> A '+ stuff[key].type + ' by '+ stuff[key].creator + '</a><br>');
+          $("#dez").append('<a>' + stuff[key].name + '</a><br>');
+          $("#dez").append('<a>' + stuff[key].des + '</a><br>');
+          $("#dez").append('<a> A '+ stuff[key].type + ' by '+ stuff[key].creator + '</a><br>');
           //$("#indie").append('<input id="com" placeholder="Leave a comment"><input id="addc" type="Submit">');
           $("#indie").append('<input id="comname" placeholder="Name"><input id="com" placeholder="Leave a comment"><input id="addc" type="Submit">');
           //$("#indie").append('<div id="fb-root"></div>');
@@ -161,8 +168,8 @@ projects.on('value',function(snapshot){
       if(pros.hasOwnProperty(pro)){
         var projectProps = pros[pro];
         var filter = $("#typefilter").val();
-       
-        if($("#typefilter").val() === "All"){
+       debugger
+        if($("#typefilter").val() === "Everything"){
           displayProjects(projectProps.name,projectProps.link,projectProps.creator,projectProps.type,projectProps.des,projectProps.img,year);
         }
         else if(projectProps.type === $("#typefilter").val())  {
@@ -171,6 +178,9 @@ projects.on('value',function(snapshot){
       }
   }
 });
+
+
+
        //  $("#jsscript").append('<script> $.getScript("https://cdn.firebase.com/js/client/1.0.15/firebase.js", function() {var projects = new Firebase("https://asproject.firebaseio.com/"); $("#addc").click(function(){ var comment = $("#com").val(); projects.push({comments:comment});});});');
 
 //          $("#jsscript").append('<script> $("#addc").click(function(){ var myComments = $("div"); var comment = $("#com").val(); $("body").append("<div>" + comment + "</div>");});');
