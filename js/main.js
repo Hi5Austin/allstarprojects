@@ -132,9 +132,9 @@ allComs.on('child_added',function(snapshot) {
       var stuff = snapshot.val();
       for(var key in stuff) {
         if(stuff[key].link === projects_url) {
-          $("#dez").append('<a>' + stuff[key].link + '</a><br>');
-          $("#dez").append('<a>' + stuff[key].des + '</a><br>');
-          $("#dez").append('<a> A '+ stuff[key].type + ' by '+ stuff[key].creator + '</a><br>');
+          $("#indie").append('<a>' + stuff[key].link + '</a><br>');
+          $("#indie").append('<a>' + stuff[key].des + '</a><br>');
+          $("#indie").append('<a> A '+ stuff[key].type + ' by '+ stuff[key].creator + '</a><br>');
           $("#indie").append('<input id="com" placeholder="Leave a comment"><input id="addc" type="Submit">');
           //$("#indie").append('<div id="fb-root"></div>');
           //$("#indie").prepend('<div id="fb-root"></div><script>(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = "http://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";fjs.parentNode.insertBefore(js, fjs);}(document, "script", "facebook-jssdk"));</script>');
