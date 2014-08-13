@@ -121,7 +121,7 @@ var displayCommetns = function(comments) {
 allComs.on('child_added',function(snapshot) {
   var coo = snapshot.val();
   if(coo.url === getURLParameter("projects_url")){
-    $("#indie").append('<div id="myComs"><a id="mname">' + coo.name + "</a><br><a id='name'> "+ coo.comments + '</a></div>');
+    $("#indie").append('<div id="myComs"><a id="mname">' + coo.name + "</a><br><a id='name'> "+ coo.comments + '</a><br></div>');
   }
 });
 
