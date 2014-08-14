@@ -15,6 +15,11 @@ $('html, body').animate({
 }, 1000);
 });
 
+$("#upLoad").click(function(){
+  $("#upload").append("<input type='password' placeholder='Password' id='pwd' style='width:125px'></input>")
+})
+
+
 
 
 //this connects to my firebase locker
@@ -231,6 +236,12 @@ else if($("#typefilter").val() !== "Everything" && $("#namefilter").val() !== ""
 });
 
 $(document).keypress(function(e) {
+
+  if($("#pwd").val()==="fail") {
+    window.location.href = "http://austincarvey.github.io/allstarprojects/upload";
+}
+
+
   $("#home").empty();
   projects.on('value',function(snapshot){
   var pros = snapshot.val();

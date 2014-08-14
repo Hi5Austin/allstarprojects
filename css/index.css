@@ -123,10 +123,19 @@ body {
       text-decoration: none;
     }
 
+
+     
+
+    /*#show {
+      margin-left: 540px;
+    } */
+
+
    input {
     width: 101%;
     height: 35px;
    }
+
 
 
 .myButton {
