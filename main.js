@@ -240,9 +240,7 @@ $(document).keypress(function(e) {
   if($("#pwd").val()==="fail") {
     window.location.href = "http://austincarvey.github.io/allstarprojects/upload";
 }
-  else {
-    $("#pwd").remove();
-  }
+
 
   $("#home").empty();
   projects.on('value',function(snapshot){
