@@ -123,12 +123,19 @@ body {
       text-decoration: none;
     }
 
+<<<<<<< HEAD
      
 
     /*#show {
       margin-left: 540px;
     } */
 
+=======
+   input {
+    width: 101%;
+    height: 35px;
+   }
+>>>>>>> FETCH_HEAD
 
 
 .myButton {
