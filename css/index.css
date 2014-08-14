@@ -200,6 +200,9 @@ h4{
   margin-left: 10px;
 }
 
+*:focus {
+  outline: 0;
+}
 
 
 
