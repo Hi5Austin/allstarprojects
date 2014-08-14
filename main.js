@@ -17,6 +17,7 @@ $('html, body').animate({
 
 $("#upLoad").click(function(){
   $("#upload").append("<input type='password' placeholder='Password' id='pwd' style='width:125px'></input>")
+  $("#upload").focus();
 })
 
 
