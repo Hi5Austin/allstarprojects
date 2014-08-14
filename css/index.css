@@ -74,6 +74,16 @@ body {
       opacity: 0.6;
       cursor: pointer;
     }
+
+    #aboutus:hover {
+      opacity: 0.6;
+      cursor: pointer;
+    }
+
+    #upLoad:hover {
+      opacity: 0.6;
+      cursor: pointer;
+    }
     
 
     #homeslide {

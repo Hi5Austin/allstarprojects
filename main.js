@@ -15,6 +15,8 @@ $('html, body').animate({
 }, 1000);
 });
 
+
+
 //this connects to my firebase locker
 //projects.on('value', function (snapshot) {
 	//var database = snapshot.val();
