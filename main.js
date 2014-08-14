@@ -15,6 +15,8 @@ $('html, body').animate({
 }, 1000);
 });
 
+
+
 //this connects to my firebase locker
 //projects.on('value', function (snapshot) {
 	//var database = snapshot.val();
@@ -141,6 +143,8 @@ allComs.on('child_added',function(snapshot) {
         if(stuff[key].link === projects_url) {
           $("#dez").append('<a>' + stuff[key].name + '</a><br>');
           $("#dez").append('<a>' + stuff[key].des + '</a><br>');
+          $("#dez").append('<a>by ' + stuff[key].creator + '</a><br>');
+
           //$("#indie").append('<input id="com" placeholder="Leave a comment"><input id="addc" type="Submit">');
           $("#dez").append('<input id="comname" placeholder="Name"><input id="com" placeholder="Leave a comment"><input id="addc" type="Submit">');
           //$("#indie").append('<div id="fb-root"></div>');
