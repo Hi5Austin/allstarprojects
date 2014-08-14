@@ -66,10 +66,10 @@ var addProjectsToList = function() {
     var myLink = $("#searchBox").val();
     var myCreator = $("#nameBox").val();
     var myType = $("#projectType option:selected").text();
-    debugger
+
     var myDes = $("#des").val();
     var myImg = $("#img").val();
-   debugger
+
 
 // this adds that data to the html file so it will be displayed
 
@@ -77,7 +77,6 @@ var addProjectsToList = function() {
  
 
 // this pushes that data as an object to my firebase locker
-
 
 };
 
@@ -117,12 +116,24 @@ allComs.on('child_added',function(snapshot) {
   }
 });
 
+$("#thepassword").hide();
 var toggleUpload = function() {
-    .toggle
+    $("thepassword").show();
 }
+$("#upLoad").click(toggleUpload);
 
-("#upload").click(toggleUpload())
-
+document.keypress(function(e) {
+var thepassword = $("thepassword").val()
+if(e.which == 13) {
+ if (thepassword = "fail") {
+  window.location.href="upload.html"
+ };
+ else {
+  window.location.href="index.html"
+ }
+}
+});
+ 
  function getURLParameter(name) {
       return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null;
     }
