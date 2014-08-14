@@ -227,6 +227,7 @@ else if($("#typefilter").val() !== "Everything" && $("#namefilter").val() !== ""
 });
 
 $(document).keypress(function(e) {
+  $("#home").empty();
   projects.on('value',function(snapshot){
   var pros = snapshot.val();
   
