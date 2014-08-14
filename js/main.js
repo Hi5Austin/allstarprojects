@@ -116,11 +116,13 @@ allComs.on('child_added',function(snapshot) {
   }
 });
 
-$("#thepassword").hide();
+
 var toggleUpload = function() {
-    $("thepassword").show();
+    $(".nav").append("<input" + "placeholder=What is the ASC secret password?>");
 }
-$("#upLoad").click(toggleUpload);
+
+
+
 
 document.keypress(function(e) {
 var thepassword = $("thepassword").val()
