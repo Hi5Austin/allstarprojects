@@ -118,9 +118,10 @@ allComs.on('child_added',function(snapshot) {
 });
 
 var toggleUpload = function() {
-  
+    .toggle
 }
 
+("#upload").click(toggleUpload())
 
  function getURLParameter(name) {
       return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null;
