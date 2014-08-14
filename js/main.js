@@ -117,7 +117,9 @@ allComs.on('child_added',function(snapshot) {
   }
 });
 
-
+var toggleUpload = function() {
+  
+}
 
 
  function getURLParameter(name) {
@@ -145,44 +147,8 @@ allComs.on('child_added',function(snapshot) {
       }
     });
 
-//$("#filtersubmit").click(function(){
-//$("#home").empty();
-//projects.on('value',function(snapshot){
-  //var pros = snapshot.val();
- 
-
-  // here apply the filter IM YELLING AT YOU
-  //for(var x in pros){
-    //console.log(x.type);
-  //}
-  //for(var pro in pros) {
-      //if(pros.hasOwnProperty(pro)){
-       // var projectProps = pros[pro];
-      //  var filter = $("#typefilter").val();
-       
-       // if($("#typefilter").val() === "All"){
-         // displayProjects(projectProps.name,projectProps.link,projectProps.creator,projectProps.type,projectProps.des,projectProps.img,year);
-        //}
-        //else if(projectProps.type === $("#typefilter").val())  {
-       //   displayProjects(projectProps.name,projectProps.link,projectProps.creator,projectProps.type,projectProps.des,projectProps.img,year);
-       // }
-     // }
-        //displayProjects(projectProps.link,projectProps.creator,projectProps.type);
- // }
 });
-       //  $("#jsscript").append('<script> $.getScript("https://cdn.firebase.com/js/client/1.0.15/firebase.js", function() {var projects = new Firebase("https://asproject.firebaseio.com/"); $("#addc").click(function(){ var comment = $("#com").val(); projects.push({comments:comment});});});');
 
-//          $("#jsscript").append('<script> $("#addc").click(function(){ var myComments = $("div"); var comment = $("#com").val(); $("body").append("<div>" + comment + "</div>");});');
-
-   // $("#addc").click(function(){
-     //var comment = $("#com").val(); 
-      //$("indie").append("<div>" + comment + "</div>");
-    //});
-
-//$("#addc").click(function(){
-   // var myComments = $("div"); 
-   // debugger
-    //projects.push({comments: myComments}); 
 });
  
 
